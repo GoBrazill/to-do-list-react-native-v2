@@ -1,44 +1,38 @@
 import { StyleSheet } from "react-native";
-import { theme } from "../../styles/global";
+import { theme } from '../../styles/global'
 
 export const styles = StyleSheet.create({
-    card: {
+    modal: {
+        flex: 1,
+        padding: 30,
+        backgroundColor: theme.colors.background
+    },
+
+    titulo: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 20
+    },
+
+    input: {
         backgroundColor: '#fff',
         padding: 15,
-        borderRadius: 15,
+        borderRadius: 8,
         marginBottom: 10,
-        flexDirection: row,
-        borderLeftWidth: 6,
-        elevation: 2
+        borderWidth: 1,
+        borderColor: '#ddd'
     },
-    title: {
-        fontSize: 17,
-        fontWeight: 'bold',
-        color: theme.colors.textMain,
 
+    button: {
+        backgroundColor: theme.colors.primary,
+        padding: 15,
+        borderRadius: 10,
+        alignItems: 'center'
     },
-    desc: {
-        fontSize: 14,
-        fontWeight: 'bold',
-        color: theme.colors.textSub
-    },
-    badge: {
-        fontSize: 11,
-        fontWeight: 'bold',
-        marginTop: 5
-    },
-    date: {
-        fontSize: 10,
-        color: '#94a3b8',
-        marginTop: 5
-    },
-    actions: {
-        flexDirection: 'row',
-        gap: 15,
-        alignItems: 'center',
-        marginTop: 10
-    },
-    icon: {
-        fontSize: 22,
-    }  
+
+    txtCancelar: {
+        color: '#f00',
+        textAlign: 'center',
+        
+    }
 })
