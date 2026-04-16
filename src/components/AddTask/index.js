@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, View, Text, TextInput, TouchableOpacity } from "react-native";
-import styles from './style'
+import { styles } from './style'
 
 export default function AddTask({ visible, onSave, onClose }) {
 
@@ -75,7 +75,7 @@ export default function AddTask({ visible, onSave, onClose }) {
                 </TouchableOpacity>
 
                 <TouchableOpacity style={styles.button} onPress={ onClose }>
-                    <Text style={styles.txtCanclar}>Cancelar</Text>
+                    <Text style={styles.txtCancelar}>Cancelar</Text>
                 </TouchableOpacity>
             </View>
         </Modal>
