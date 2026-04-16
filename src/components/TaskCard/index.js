@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity, StyleSheet } from "react-native-web";
-
+import { styles } from './style'
 import { theme } from '../../styles/global'
 
 export default function taskCard({ item, onDelete, onEdit }) {
